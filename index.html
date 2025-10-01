@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkCard – بطاقة روابطك الرقمية</title>
+  <meta name="description" content="أنشئ صفحة شخصية تحتوي على جميع حساباتك على السوشيال ميديا، واحصل على باركود QR فوري!">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3100035705599122"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>LinkCard</h1>
+      <p>روابطك في باركود واحد 📲</p>
+    </header>
+
+    <!-- إعلان AdSense -->
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3100035705599122"
+         data-ad-slot="1234567890"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <form id="linkcard-form">
+      <input type="text" id="id" placeholder="اسم المستخدم (مثل: ahmad123)" required minlength="3" maxlength="20" pattern="[a-zA-Z0-9_]+" title="أحرف إنجليزية وأرقام فقط">
+      <input type="text" id="name" placeholder="الاسم الكامل" required>
+      <input type="text" id="bio" placeholder="المهنة أو وصف قصير (اختياري)">
+
+      <div class="social-inputs">
+        <div><i class="fab fa-instagram"></i><input type="url" id="instagram" placeholder="رابط إنستغرام"></div>
+        <div><i class="fab fa-x-twitter"></i><input type="url" id="twitter" placeholder="رابط X / تويتر"></div>
+        <div><i class="fab fa-facebook"></i><input type="url" id="facebook" placeholder="رابط فيسبوك"></div>
+        <div><i class="fab fa-tiktok"></i><input type="url" id="tiktok" placeholder="رابط تيك توك"></div>
+        <div><i class="fab fa-linkedin"></i><input type="url" id="linkedin" placeholder="رابط لينكدإن"></div>
+        <div><i class="fab fa-youtube"></i><input type="url" id="youtube" placeholder="رابط يوتيوب"></div>
+        <div><i class="fab fa-whatsapp"></i><input type="tel" id="whatsapp" placeholder="رقم واتساب مع رمز الدولة"></div>
+        <div><i class="fas fa-globe"></i><input type="url" id="website" placeholder="موقعك الشخصي"></div>
+        <div><i class="fas fa-envelope"></i><input type="email" id="email" placeholder="بريدك الإلكتروني"></div>
+      </div>
+
+      <button type="submit">أنشئ بطاقتي</button>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
